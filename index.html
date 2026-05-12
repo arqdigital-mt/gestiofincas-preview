@@ -951,6 +951,7 @@ function Pillars({ t }) {
 
 /* ============================ Testimonial ============================ */
 function Testimonial({ t }) {
+  if (!t.quote) return null;
   return (
     <section style={{ padding: '120px 48px', background: 'var(--paper)' }}>
       <div style={{ maxWidth: 880, margin: '0 auto', textAlign: 'center' }}>
